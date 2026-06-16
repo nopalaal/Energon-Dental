@@ -150,8 +150,6 @@ Seluruh konfigurasi SEO dikelola di satu file ini. Ini adalah **titik utama** ya
 ```
 SITE_URL     = 'https://energondental.com'
 SITE_NAME    = 'Energon Dental'
-WHATSAPP_NUMBER = '6285717796330'
-COMPANY_EMAIL   = 'info@energondental.com'
 ```
 
 **Target Keywords yang sudah didefinisikan:**
