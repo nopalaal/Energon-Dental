@@ -64,9 +64,6 @@ export function useProducts(): {
             .maybeSingle(),
         ]);
 
-console.log("productsData:", productsData); // tambah ini
-console.log("productsError:", productsError); // tambah ini
-
         if (cancelled) return;
 
         if (productsError) throw productsError;

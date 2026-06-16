@@ -52,6 +52,8 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
+import { useSEO, addStructuredData } from "@/hooks/useSEO";
+import { SEO_CONFIG, SITE_URL, generateBreadcrumbSchema, BREADCRUMB_ITEMS, generateProductSchema } from "@/lib/seoConfig";
 
 const INITIAL_VISIBLE = 4;
 const WHATSAPP_NUMBER = "6285717796330";
@@ -120,6 +122,24 @@ const SORT_OPTIONS = {
 };
 
 const Products = () => {
+  // Set SEO meta tags untuk halaman Products
+  useSEO({
+    title: SEO_CONFIG.products.title,
+    description: SEO_CONFIG.products.description,
+    keywords: SEO_CONFIG.products.keywords,
+    canonical: SITE_URL + '/products',
+    ogTitle: 'Katalog Produk Alat Dokter Gigi - Energon Dental',
+    ogDescription: 'Jelajahi katalog lengkap alat dokter gigi berkualitas tinggi dari Energon Dental dengan harga kompetitif',
+    ogImage: SEO_CONFIG.products.ogImage,
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+  });
+
+  // Tambahkan structured data BreadcrumbList
+  useEffect(() => {
+    return addStructuredData(generateBreadcrumbSchema(BREADCRUMB_ITEMS.products));
+  }, []);
+
   const { data: productsData, loading } = useProducts();
   const [selectedProduct, setSelectedProduct] = useState<ProductWithBrand | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
