@@ -31,8 +31,7 @@ const Hero = () => {
           </h1>
           {/* Deskripsi dengan keywords sekunder */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-            Kami adalah distributor dan supplier alat dokter gigi terpercaya di Indonesia. Menyediakan dental equipment, autoclave, handpiece, dental unit, dan berbagai peralatan dental berkualitas tinggi dengan harga kompetitif untuk klinik, rumah sakit, dan distributor di seluruh Indonesia.
-          </p>
+Menyediakan alat dan bahan dental berkualitas tinggi dengan harga kompetitif untuk klinik, rumah sakit, dan distributor di seluruh Indonesia.          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"

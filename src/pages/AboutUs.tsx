@@ -150,13 +150,13 @@ const AboutUs = () => {
                         <h2 id="mission-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                             Misi Kami
                         </h2>
-                        <ul className="text-lg text-muted-foreground leading-relaxed space-y-3">
-                            <li>✓ Menghadirkan produk dental terbaik dengan harga yang kompetitif dan terjangkau</li>
-                            <li>✓ Mendukung dokter gigi melalui solusi praktis dan inovatif untuk kesehatan gigi optimal</li>
-                            <li>✓ Memperluas distribusi agar alat dokter gigi mudah dijangkau di seluruh Indonesia</li>
-                            <li>✓ Memberikan pelayanan cepat, ramah, responsif, dan dapat diandalkan</li>
-                            <li>✓ Tumbuh bersama mitra dan pelanggan untuk kemajuan layanan kesehatan gigi nasional</li>
-                        </ul>
+                        <p className="text-xl text-muted-foreground leading-relaxed">
+                         Menghadirkan produk dental terbaik dengan harga yang kompetitif,
+                            mendukung dokter gigi melalui <span className="text-primary font-semibold">solusi praktis dan inovatif</span>,
+                            memperluas distribusi agar produk mudah dijangkau di seluruh Indonesia,
+                            memberikan pelayanan yang cepat, ramah, dan dapat diandalkan,
+                            serta tumbuh bersama mitra dan pelanggan untuk kemajuan layanan kesehatan gigi.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -221,48 +221,6 @@ const AboutUs = () => {
                                 <Phone className="w-5 h-5 mr-2" />
                                 Hubungi Kami Sekarang
                             </Button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <Footer />
-        </div>
-    );
-};
-
-export default AboutUs;
-                                    </div>
-                                    <h3 className="text-xl font-bold text-foreground mb-2">
-                                        {value.title}
-                                    </h3>
-                                    <p className="text-muted-foreground">
-                                        {value.description}
-                                    </p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            {/* Contact Section */}
-            <section className="py-24 bg-gradient-hero">
-                <div className="container mx-auto px-6">
-                    <div className="max-w-3xl mx-auto text-center animate-fade-in">
-                        <h2 className="text-4xl font-bold text-foreground mb-6">
-                            Mari Bekerja Sama
-                        </h2>
-                        <p className="text-muted-foreground mb-8">
-                            Punya pertanyaan tentang produk atau layanan kami?
-                            Kami siap membantu Anda menemukan solusi terbaik untuk praktik dental Anda.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button className="" onClick={handleContactWhatsApp}>
-                                <Phone className="w-5 h-5 mr-2" />
-                                Hubungi Kami
-                            </Button>
-                          
                         </div>
                     </div>
                 </div>
