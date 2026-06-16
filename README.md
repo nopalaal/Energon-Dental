@@ -20,10 +20,6 @@
 **Domain:** `https://energondental.com`  
 **Jenis:** Website Company Profile + Katalog Produk B2B  
 **Bahasa:** Indonesia (`lang="id"`)  
-**Kontak:**
-- WhatsApp: `+62 857 1779 6330`
-- Email: `energonbintangmulia@gmail.com`
-- Alamat: Mutiara Taman Palem, Jakarta Barat, Indonesia
 
 ---
 
